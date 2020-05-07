@@ -20,4 +20,4 @@
     loop_control:
       label: "{{ item.name }}"
  
-- import_playbook: ~/bad-ansible/main.yml
+- import_playbook: ./main.yml
