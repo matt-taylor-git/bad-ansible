@@ -1,0 +1,7 @@
+---
+- name: Check Quality
+  hosts: localhost
+  gather_facts: false
+  tasks:
+  - name: Run yamllint and ansible-lint in current directory
+    command: yamllint "{{ playbook_dir }}"
